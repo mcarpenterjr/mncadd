@@ -20,7 +20,7 @@
       <nav>
         <div class="nav-wrapper grey darken-4 z-depth-2">
           <a href="#!" class="brand-logo">Browser CADD</a>
-          <a href="#" data-activates="mobile-demo" class="button-collapse">
+          <a href="#" data-activates="menuContent" class="button-collapse">
             <i class="fa fa-bars fa-fw"></i>
           </a>
           <ul class="right hide-on-med-and-down">
@@ -40,7 +40,7 @@
               <a data-bind="attr: { href: resumeData.bio.contacts.twitter }" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
             </li>
           </ul>
-          <ul class="side-nav" id="mobile-demo">
+          <ul class="side-nav" id="menuContent">
             <li>
               <a data-bind="attr: { href: resumeData.bio.contacts.email }" target="_blank"><i class="fa fa-envelope fa-2x"></i> Email</a>
             </li>
@@ -89,6 +89,11 @@
   <script src="libs/sweetalert/dist/sweetalert.min.js"></script>
   <script src="js/engine.js"></script>
   <script src="js/worker.js"></script>
+  <script>
+  $( document ).ready(function() {
+    $(".button-collapse").sideNav();
+  })
+  </script>
 </body>
 
 </html>

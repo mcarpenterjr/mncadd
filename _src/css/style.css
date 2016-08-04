@@ -19,6 +19,10 @@ main {
   width: 100%;
 }
 
+nav a.button-collapse {
+  display: inherit !important;
+}
+
 .fullscreen .indicators {
     visibility: hidden;
 }
